@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pet_app/presentation/screens/home_screen.dart';
 import 'package:pet_app/presentation/theme/theme.dart';
 import 'presentation/screens/on_boarding.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Pet Care',
       theme: AppTheme.lightTheme,
-      home: OnBoardingPage(),
+      home: HomeScreen(),
     );
   }
 }

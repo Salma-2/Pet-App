@@ -1,10 +1,9 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:pet_app/presentation/theme/light_color.dart';
-import 'package:pet_app/presentation/theme/text_styles.dart';
-import 'package:pet_app/presentation/theme/extention.dart';
-import 'package:pet_app/presentation/theme/theme.dart';
+import 'package:pet_app/data/models/model.dart';
+import 'package:pet_app/presentation/theme/all_theme.dart';
 import 'package:drawer_swipe/drawer_swipe.dart';
+import 'package:pet_app/presentation/widgets/list.dart';
+import 'package:pet_app/presentation/widgets/textList.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
@@ -15,6 +14,94 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   var drawerKey = GlobalKey<SwipeDrawerState>();
+
+  var storeList = [
+    Model('store1', 'https://cutt.ly/Dc4ylvg', 'desc1'),
+    Model('store2', 'https://cutt.ly/yc4yv4X', 'desc2'),
+    Model('store3', 'https://cutt.ly/Dc4ylvg', 'desc3'),
+    Model('store4', 'https://cutt.ly/yc4yv4X', 'desc4'),
+    Model('store5', 'https://cutt.ly/Dc4ylvg', 'desc5'),
+  ];
+  var postList = [
+    Model(
+        'post1',
+        'https://image.freepik.com/free-vector/cat-elegant-tie_71593-692.jpg',
+        'desc1'),
+    Model(
+        'post2',
+        'https://image.freepik.com/free-vector/cat-elegant-tie_71593-692.jpg',
+        'desc2'),
+    Model(
+        'post3',
+        'https://image.freepik.com/free-vector/cat-elegant-tie_71593-692.jpg',
+        'desc3'),
+    Model(
+        'post4',
+        'https://image.freepik.com/free-vector/cat-elegant-tie_71593-692.jpg',
+        'desc4'),
+    Model(
+        'post5',
+        'https://image.freepik.com/free-vector/cat-elegant-tie_71593-692.jpg',
+        'desc5'),
+  ];
+  var blogList = [
+    Model('blog1', 'https://cutt.ly/Xc4hR8Q', 'desc1'),
+    Model('blog2', 'https://cutt.ly/Xc4hR8Q', 'desc2'),
+    Model('blog3', 'https://cutt.ly/Xc4hR8Q', 'desc3'),
+    Model('blog4', 'https://cutt.ly/Xc4hR8Q', 'desc4'),
+    Model('blog5', 'https://cutt.ly/Xc4hR8Q', 'desc5'),
+  ];
+  var clinicList = [
+    Model('clinic1', 'https://cutt.ly/Fc4juzI', 'desc1'),
+    Model('clinic2', 'https://cutt.ly/Fc4juzI', 'desc2'),
+    Model('clinic3', 'https://cutt.ly/Fc4juzI', 'desc3'),
+    Model('clinic4', 'https://cutt.ly/Fc4juzI', 'desc4'),
+    Model('clinic5', 'https://cutt.ly/Fc4juzI', 'desc5'),
+  ];
+  var shelterList = [
+    Model(
+        'shelter1',
+        'https://image.freepik.com/free-vector/animal-shelter-concept-illustration_114360-2706.jpg',
+        'desc1'),
+    Model(
+        'shelter2',
+        'https://image.freepik.com/free-vector/animal-shelter-concept-illustration_114360-2706.jpg',
+        'desc2'),
+    Model(
+        'shelter3',
+        'https://image.freepik.com/free-vector/animal-shelter-concept-illustration_114360-2706.jpg',
+        'desc3'),
+    Model(
+        'shelter4',
+        'https://image.freepik.com/free-vector/animal-shelter-concept-illustration_114360-2706.jpg',
+        'desc4'),
+    Model(
+        'shelter5',
+        'https://image.freepik.com/free-vector/animal-shelter-concept-illustration_114360-2706.jpg',
+        'desc5'),
+  ];
+  var doctorList = [
+    Model(
+        'doctor1',
+        'https://image.freepik.com/free-vector/doctor-character-background_1270-84.jpg',
+        'desc1'),
+    Model(
+        'doctor2',
+        'https://image.freepik.com/free-vector/doctor-character-background_1270-84.jpg',
+        'desc2'),
+    Model(
+        'doctor3',
+        'https://image.freepik.com/free-vector/doctor-character-background_1270-84.jpg',
+        'desc3'),
+    Model(
+        'doctor4',
+        'https://image.freepik.com/free-vector/doctor-character-background_1270-84.jpg',
+        'desc4'),
+    Model(
+        'doctor5',
+        'https://image.freepik.com/free-vector/doctor-character-background_1270-84.jpg',
+        'desc5'),
+  ];
 
   Widget _appBar() {
     return AppBar(
@@ -116,22 +203,79 @@ class _HomeScreenState extends State<HomeScreen> {
             scrollDirection: Axis.horizontal,
             children: <Widget>[
               _categoryCard("Posts",
-                  color: LightColor.green, lightColor: LightColor.lightGreen),
+                      color: LightColor.green,
+                      lightColor: LightColor.lightGreen)
+                  .ripple(() {
+                newScreen('Posts', postList);
+              }),
               _categoryCard("Blogs",
-                  color: LightColor.skyBlue, lightColor: LightColor.lightBlue),
+                      color: LightColor.skyBlue,
+                      lightColor: LightColor.lightBlue)
+                  .ripple(() {
+                newScreen('Blogs', blogList);
+              }),
               _categoryCard("Clinics",
-                  color: LightColor.orange, lightColor: LightColor.lightOrange),
+                      color: LightColor.orange,
+                      lightColor: LightColor.lightOrange)
+                  .ripple(() {
+                newScreen('Clinics', clinicList);
+              }),
               _categoryCard("Stores",
-                  color: LightColor.purple, lightColor: LightColor.purpleLight),
+                      color: LightColor.purple,
+                      lightColor: LightColor.purpleLight)
+                  .ripple(() {
+                newScreen('Stores', storeList);
+              }),
               _categoryCard("Shelters",
-                  color: LightColor.black, lightColor: LightColor.lightblack),
+                      color: LightColor.black,
+                      lightColor: LightColor.lightblack)
+                  .ripple(() {
+                newScreen('Shelters', shelterList);
+              }),
               _categoryCard("Ask a Doctor",
-                  color: LightColor.grey, lightColor: LightColor.iconColor),
+                      color: LightColor.grey, lightColor: LightColor.iconColor)
+                  .ripple(() {
+                newScreen('Doctors', doctorList);
+              }),
             ],
           ),
         ),
       ],
     );
+  }
+
+  void newScreen(
+    title,
+    dataList,
+  ) {
+    var listScreen;
+    switch (title) {
+      case 'Blogs':
+        listScreen = TextListScreen(
+          context: context,
+          title: title,
+          dataList: dataList,
+        );
+        break;
+
+      case 'Posts':
+        listScreen = TextListScreen(
+          context: context,
+          title: title,
+          dataList: dataList,
+        );
+        break;
+
+      default:
+        listScreen = ListScreen(
+          context: context,
+          title: title,
+          dataList: dataList,
+        );
+    }
+
+    var route = MaterialPageRoute(builder: (context) => (listScreen));
+    Navigator.push(context, route);
   }
 
   Widget _categoryCard(String title, {Color color, Color lightColor}) {
@@ -186,25 +330,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ).ripple(() {}, borderRadius: BorderRadius.all(Radius.circular(20))),
       ),
     );
-  }
-
-  Color randomColor() {
-    var random = Random();
-    final colorList = [
-      Theme.of(context).primaryColor,
-      LightColor.orange,
-      LightColor.green,
-      LightColor.grey,
-      LightColor.lightOrange,
-      LightColor.skyBlue,
-      LightColor.titleTextColor,
-      Colors.red,
-      Colors.brown,
-      LightColor.purpleExtraLight,
-      LightColor.skyBlue,
-    ];
-    var color = colorList[random.nextInt(colorList.length)];
-    return color;
   }
 
   @override
