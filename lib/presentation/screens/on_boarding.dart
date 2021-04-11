@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:pet_app/presentation/screens/home_page.dart';
+import 'package:pet_app/presentation/screens/login_screen.dart';
 
 class OnBoardingPage extends StatefulWidget {
   @override
@@ -13,7 +13,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
 
   void _onIntroEnd(context) {
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => HomePage()),
+      MaterialPageRoute(builder: (_) => LoginScreen()),
     );
   }
 
