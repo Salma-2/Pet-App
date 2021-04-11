@@ -22,8 +22,7 @@ Pet App
 <img src="https://user-images.githubusercontent.com/48512714/114320505-746fc580-9b16-11eb-9263-c7917f6670ea.png" width="400" height="790" alt="some_text">
 
 
-
-
+<img src="https://user-images.githubusercontent.com/48512714/114321150-8dc64100-9b19-11eb-959b-4f9950c7a50d.png" width="400" height="790" alt="some_text">
 
 <img src="https://user-images.githubusercontent.com/48512714/114320508-76398900-9b16-11eb-9106-18876d965374.png" width="400" height="790" alt="some_text">
 
