@@ -89,8 +89,8 @@ class _ChatListScreenState extends State<ChatListScreen> {
           ),
         ),
       ).ripple(() {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => ChatPage()));
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => ChatPage(model: model)));
       }, borderRadius: BorderRadius.all(Radius.circular(20))),
     );
   }

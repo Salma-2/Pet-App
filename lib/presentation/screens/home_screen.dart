@@ -406,7 +406,7 @@ class _HomeScreenState extends State<HomeScreen> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
               ),
-              child: Image.asset(
+              child: Image.network(
                 model.imageUrl,
                 height: 50,
                 width: 50,
