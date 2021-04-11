@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pet_app/data/models/model.dart';
 import 'package:pet_app/presentation/screens/chat_list_screen.dart';
+import 'package:pet_app/presentation/screens/my_pets_screen.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
 import 'package:drawer_swipe/drawer_swipe.dart';
 import 'package:pet_app/presentation/screens/list.dart';
@@ -456,10 +457,15 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           ListTile(
             title: Text(
-              'Profile',
+              'My Pets',
               style: TextStyle(color: Colors.white),
             ),
-            leading: Icon(Icons.person, color: Colors.white),
+            leading: Icon(Icons.pets, color: Colors.white),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MyPetsScreen(context: context,)));
+              drawerKey.currentState.closeDrawer();
+            },
           ),
           ListTile(
             title: Text(
@@ -470,6 +476,8 @@ class _HomeScreenState extends State<HomeScreen> {
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ChatListScreen()));
+
+              drawerKey.currentState.closeDrawer();
             },
           ),
           ListTile(
