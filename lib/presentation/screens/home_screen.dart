@@ -6,6 +6,8 @@ import 'package:drawer_swipe/drawer_swipe.dart';
 import 'package:pet_app/presentation/screens/list.dart';
 import 'package:pet_app/presentation/screens/textList.dart';
 
+import 'my_pets_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
 
@@ -461,8 +463,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             leading: Icon(Icons.pets, color: Colors.white),
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => MyPetsScreen(context: context,)));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MyPetsScreen(
+                            context: context,
+                          )));
               drawerKey.currentState.closeDrawer();
             },
           ),
