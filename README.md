@@ -11,7 +11,7 @@ Pet App is an App for Pet Lovers , here you can:
 
 
 Instructions: 
-* to signup
+* to signup/signin
 *  Email: mostafa@gmail.com
 *  password: 123 
 
