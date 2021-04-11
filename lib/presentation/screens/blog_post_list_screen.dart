@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pet_app/presentation/screens/new_blog_screen.dart';
 import 'package:pet_app/presentation/screens/post_detail_screen.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
-
-import 'new_post_screen.dart';
 
 class TextListScreen extends StatelessWidget {
   final String title;
@@ -19,9 +16,7 @@ class TextListScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         tooltip: 'Add new',
-        onPressed: () {
-          title == 'Blogs' ? addNewBlog() : addNewPost();
-        },
+        onPressed: () {},
       ),
       appBar: AppBar(
         title: Text(title),
@@ -109,15 +104,5 @@ class TextListScreen extends StatelessWidget {
       },
       borderRadius: BorderRadius.all(Radius.circular(20)),
     );
-  }
-
-  addNewBlog() {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => NewBlogScreen()));
-  }
-
-  addNewPost() {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => NewPostScreen()));
   }
 }
