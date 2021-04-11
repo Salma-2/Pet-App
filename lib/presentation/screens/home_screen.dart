@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:pet_app/data/models/model.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
 import 'package:drawer_swipe/drawer_swipe.dart';
-import 'package:pet_app/presentation/widgets/list.dart';
-import 'package:pet_app/presentation/widgets/textList.dart';
+import 'package:pet_app/presentation/screens/list.dart';
+import 'package:pet_app/presentation/screens/textList.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
