@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pet_app/presentation/screens/home_screen.dart';
+import 'package:pet_app/presentation/theme/theme.dart';
 import 'presentation/screens/on_boarding.dart';
 
 void main() {
@@ -10,7 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnBoardingPage(),
+      title: 'Pet Care',
+      theme: AppTheme.lightTheme,
+      home: HomeScreen(),
     );
   }
 }
