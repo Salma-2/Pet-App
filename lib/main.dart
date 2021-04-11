@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pet_app/presentation/screens/home_screen.dart';
 import 'package:pet_app/presentation/theme/theme.dart';
 import 'presentation/screens/on_boarding.dart';
 

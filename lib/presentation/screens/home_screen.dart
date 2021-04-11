@@ -217,7 +217,7 @@ class _HomeScreenState extends State<HomeScreen> {
         key: drawerKey,
         hasClone: false,
         bodySize: 150,
-        backgroundColor: LightColor.grey,
+        backgroundColor: LightColor.lightBlue,
         drawer: buildDrawer(),
         child: buildBody(),
       ),
@@ -231,17 +231,32 @@ class _HomeScreenState extends State<HomeScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ListTile(
-            title: Text('Profile'),
-            leading: Icon(Icons.person),
-            tileColor: Colors.red,
+            title: Text(
+              'Profile',
+              style: TextStyle(color: Colors.white),
+            ),
+            leading: Icon(Icons.person, color: Colors.white),
           ),
           ListTile(
-            title: Text('Contact Us'),
-            leading: Icon(Icons.message),
+            title: Text(
+              'Chat Sessions',
+              style: TextStyle(color: Colors.white),
+            ),
+            leading: Icon(Icons.chat, color: Colors.white),
           ),
           ListTile(
-            title: Text('Sign Out'),
-            leading: Icon(Icons.exit_to_app_sharp),
+            title: Text(
+              'Contact Us',
+              style: TextStyle(color: Colors.white),
+            ),
+            leading: Icon(Icons.mail, color: Colors.white),
+          ),
+          ListTile(
+            title: Text(
+              'Sign Out',
+              style: TextStyle(color: Colors.white),
+            ),
+            leading: Icon(Icons.exit_to_app_sharp, color: Colors.white),
           ),
         ],
       ),
