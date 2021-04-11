@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pet_app/presentation/screens/new_blog_screen.dart';
+import 'package:pet_app/presentation/screens/post_detail_screen.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
 
 import 'new_post_screen.dart';
@@ -101,7 +102,10 @@ class TextListScreen extends StatelessWidget {
       ),
     ).ripple(
       () {
-        Navigator.pushNamed(context, "/DetailPage", arguments: model);
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => PostDetailPage(model: model)));
       },
       borderRadius: BorderRadius.all(Radius.circular(20)),
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pet_app/data/models/model.dart';
 import 'package:pet_app/presentation/screens/chat_sessions_screen.dart';
+import 'package:pet_app/presentation/screens/organization_details_screen.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
 import 'package:drawer_swipe/drawer_swipe.dart';
 import 'package:pet_app/presentation/screens/organization_list_screen.dart';
@@ -428,7 +429,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ).ripple(() {
-        Navigator.pushNamed(context, "/DetailPage", arguments: model);
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => OrganizationDetailPage(model: model)));
       }, borderRadius: BorderRadius.all(Radius.circular(20))),
     );
   }

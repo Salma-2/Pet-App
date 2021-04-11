@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pet_app/presentation/screens/organization_details_screen.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
 
 class ListScreen extends StatelessWidget {
@@ -92,7 +93,12 @@ class ListScreen extends StatelessWidget {
           ),
         ),
       ).ripple(() {
-        Navigator.pushNamed(context, "/DetailPage", arguments: model);
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => OrganizationDetailPage(
+                      model: model,
+                    )));
       }, borderRadius: BorderRadius.all(Radius.circular(20))),
     );
   }
