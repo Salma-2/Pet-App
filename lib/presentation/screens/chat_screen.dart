@@ -14,9 +14,15 @@ class ChatPage extends StatefulWidget {
 }
 
 class _ChatPageState extends State<ChatPage> {
+  final dynamic model;
+
+  _ChatPageState(this.model);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(this.model.name),
+      ),
       body: FlatPageWrapper(
         scrollType: ScrollType.floatingHeader,
         reverseBodyList: true,

@@ -1,48 +1,50 @@
+import 'package:pet_app/data/models/pet.dart';
+import 'add_pet_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:pet_app/presentation/screens/chat_screen.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
-import 'package:pet_app/data/models/user.dart';
 
-class ChatListScreen extends StatefulWidget {
-  @override
-  _ChatListScreenState createState() => _ChatListScreenState();
-}
-
-class _ChatListScreenState extends State<ChatListScreen> {
-  var chatList = [
-    User('Clinic', 'https://cutt.ly/xc4ELVY'),
-    User('Shelter', 'https://cutt.ly/Lc4E2xb'),
-    User('Dr.Ali', 'https://cutt.ly/6c4EO8L'),
-    User('Dr.Khaled', 'https://cutt.ly/6c4EO8L'),
-    User('Pet Store', 'https://cutt.ly/sc4EG3b'),
-    User('Dr.Esraa', 'https://cutt.ly/6c4EO8L'),
-  ];
+class MyPetsScreen extends StatelessWidget {
+  final BuildContext context;
+  const MyPetsScreen({Key key, this.context}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Chats'),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.pets),
+        tooltip: 'Add new Pet',
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => AddPetScreen()));
+        },
       ),
-      body: chatListWidget(),
+      appBar: AppBar(
+        title: Text('My Pets'),
+      ),
+      body: dataListWidget(),
     );
   }
 
-  Widget chatListWidget() {
+  Widget dataListWidget() {
     return ListView(
       padding: EdgeInsets.only(top: 15),
-      children: <Widget>[getChatWidgetList()],
+      children: <Widget>[getDataWidgetList()],
     );
   }
 
-  Widget getChatWidgetList() {
+  Widget getDataWidgetList() {
+    var petsList = [
+      Pet('Eveln', 'https://cutt.ly/Dc4GjYU'),
+      Pet('Rex', 'https://cutt.ly/Dc4GjYU'),
+      Pet('Rocky', 'https://cutt.ly/Dc4GjYU'),
+    ];
     return Column(
-        children: chatList.map((x) {
-      return _chatTile(x);
+        children: petsList.map((x) {
+      return dataTile(x);
     }).toList());
   }
 
-  Widget _chatTile(model) {
+  Widget dataTile(model) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       decoration: BoxDecoration(
@@ -88,10 +90,7 @@ class _ChatListScreenState extends State<ChatListScreen> {
             color: Theme.of(context).primaryColor,
           ),
         ),
-      ).ripple(() {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (context) => ChatPage(model: model)));
-      }, borderRadius: BorderRadius.all(Radius.circular(20))),
+      ),
     );
   }
 }

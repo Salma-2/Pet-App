@@ -6,6 +6,8 @@ import 'package:drawer_swipe/drawer_swipe.dart';
 import 'package:pet_app/presentation/screens/list.dart';
 import 'package:pet_app/presentation/screens/textList.dart';
 
+import 'my_pets_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
 
@@ -406,7 +408,7 @@ class _HomeScreenState extends State<HomeScreen> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
               ),
-              child: Image.asset(
+              child: Image.network(
                 model.imageUrl,
                 height: 50,
                 width: 50,
@@ -456,10 +458,19 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           ListTile(
             title: Text(
-              'Profile',
+              'My Pets',
               style: TextStyle(color: Colors.white),
             ),
-            leading: Icon(Icons.person, color: Colors.white),
+            leading: Icon(Icons.pets, color: Colors.white),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MyPetsScreen(
+                            context: context,
+                          )));
+              drawerKey.currentState.closeDrawer();
+            },
           ),
           ListTile(
             title: Text(
@@ -470,6 +481,8 @@ class _HomeScreenState extends State<HomeScreen> {
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ChatListScreen()));
+
+              drawerKey.currentState.closeDrawer();
             },
           ),
           ListTile(
