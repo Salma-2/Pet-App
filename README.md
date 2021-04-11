@@ -1,4 +1,22 @@
 
+Pet App is an App for Pet Lovers , here you can:
+* View The nearst , cheapest clinics for your pet.
+* Adopt a pet or rehome your pet
+* find yout pet match
+* see rescue pets posts, and help them
+* Ask a doctor 
+* find all pet stores and filter them by rate , nearest and cheapest!
+* view shelters and contact them
+* learn new information from doctors about your pet
+
+
+Instructions: 
+* to signup
+*  Email: mostafa@gmail.com
+*  password: 123 
+
+Contact us: salmahamdisaad@gmail.com | mostafaibrahimragab@gmail.com
+
 <img src="https://user-images.githubusercontent.com/48512714/114320214-41790200-9b15-11eb-9e71-00f8129e1fee.png" width="400" height="790" alt="some_text">
 <img src="https://user-images.githubusercontent.com/48512714/114320216-42aa2f00-9b15-11eb-8065-c8e853a4ac7a.png" width="400" height="790" alt="some_text">
 <img src="https://user-images.githubusercontent.com/48512714/114320217-4342c580-9b15-11eb-888f-2291f765b3ac.png" width="400" height="790" alt="some_text">
@@ -28,7 +46,3 @@
 <img src="https://user-images.githubusercontent.com/48512714/114320517-7a65a680-9b16-11eb-986a-dfebc32dc556.png" width="400" height="790" alt="some_text">
 <img src="https://user-images.githubusercontent.com/48512714/114320523-7cc80080-9b16-11eb-8ed4-6298951e40c9.png" width="400" height="790" alt="some_text">
 <img src="https://user-images.githubusercontent.com/48512714/114320527-7df92d80-9b16-11eb-94b2-f1c0bb460a60.png" width="400" height="790" alt="some_text">
-
-
-
-Contact us: salmahamdisaad@gmail.com | mostafaibrahimragab@gmail.com
