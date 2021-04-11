@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
         primaryColorDark: Color(0xffFFFFFF),
         primaryColorLight: Color(0xff000000),
       ),
-      home: OnBoardingPage(),
+      home: HomeScreen(),
     );
   }
 }
