@@ -62,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return FlutterLogin(
       title: 'PET APP',
-      logo: 'assets/images/rescue.jpg',
+      logo: 'assets/images/logo.png',
       onLogin: _authUserLogin,
       onSignup: _authUserRegister,
       loginProviders: <LoginProvider>[
