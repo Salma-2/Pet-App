@@ -3,8 +3,8 @@ import 'package:pet_app/data/models/model.dart';
 import 'package:pet_app/presentation/screens/chat_sessions_screen.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
 import 'package:drawer_swipe/drawer_swipe.dart';
-import 'package:pet_app/presentation/screens/list.dart';
-import 'package:pet_app/presentation/screens/textList.dart';
+import 'package:pet_app/presentation/screens/organization_list_screen.dart';
+import 'package:pet_app/presentation/screens/blog_post_list_screen.dart';
 
 import 'my_pets_screen.dart';
 

@@ -34,9 +34,9 @@ class MyPetsScreen extends StatelessWidget {
 
   Widget getDataWidgetList() {
     var petsList = [
-      Pet('Eveln', 'https://cutt.ly/Dc4GjYU'),
-      Pet('Rex', 'https://cutt.ly/Dc4GjYU'),
-      Pet('Rocky', 'https://cutt.ly/Dc4GjYU'),
+      Pet(petName: 'Eveln', petImageUrl: 'https://cutt.ly/Dc4GjYU'),
+      Pet(petName: 'Rex', petImageUrl: 'https://cutt.ly/Dc4GjYU'),
+      Pet(petName: 'Rocky', petImageUrl: 'https://cutt.ly/Dc4GjYU'),
     ];
     return Column(
         children: petsList.map((x) {
@@ -76,14 +76,14 @@ class MyPetsScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Image.network(
-                model.imageUrl,
+                model.petImageUrl,
                 height: 50,
                 width: 50,
                 fit: BoxFit.fill,
               ),
             ),
           ),
-          title: Text(model.name, style: TextStyles.title.bold),
+          title: Text(model.petName, style: TextStyles.title.bold),
           trailing: Icon(
             Icons.keyboard_arrow_right,
             size: 30,

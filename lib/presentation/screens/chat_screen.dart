@@ -8,9 +8,11 @@ import 'package:pet_app/presentation/widgets/flat_profile_image.dart';
 
 class ChatPage extends StatefulWidget {
   static final String id = "ChatPage";
+  final dynamic model;
 
+  const ChatPage({Key key, this.model}) : super(key: key);
   @override
-  _ChatPageState createState() => _ChatPageState();
+  _ChatPageState createState() => _ChatPageState(model);
 }
 
 class _ChatPageState extends State<ChatPage> {
