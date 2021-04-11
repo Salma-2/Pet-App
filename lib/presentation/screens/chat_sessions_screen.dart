@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pet_app/presentation/screens/chat_screen.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
-import 'package:pet_app/data/models/person.dart';
+import 'package:pet_app/data/models/user.dart';
 
 class ChatListScreen extends StatefulWidget {
   @override
@@ -10,12 +10,12 @@ class ChatListScreen extends StatefulWidget {
 
 class _ChatListScreenState extends State<ChatListScreen> {
   var chatList = [
-    Person('Clinic', 'https://cutt.ly/xc4ELVY'),
-    Person('Shelter', 'https://cutt.ly/Lc4E2xb'),
-    Person('Dr.Ali', 'https://cutt.ly/6c4EO8L'),
-    Person('Dr.Khaled', 'https://cutt.ly/6c4EO8L'),
-    Person('Pet Store', 'https://cutt.ly/sc4EG3b'),
-    Person('Dr.Esraa', 'https://cutt.ly/6c4EO8L'),
+    User('Clinic', 'https://cutt.ly/xc4ELVY'),
+    User('Shelter', 'https://cutt.ly/Lc4E2xb'),
+    User('Dr.Ali', 'https://cutt.ly/6c4EO8L'),
+    User('Dr.Khaled', 'https://cutt.ly/6c4EO8L'),
+    User('Pet Store', 'https://cutt.ly/sc4EG3b'),
+    User('Dr.Esraa', 'https://cutt.ly/6c4EO8L'),
   ];
 
   @override
