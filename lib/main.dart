@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Pet Care',
       theme: AppTheme.lightTheme,
-      home: HomeScreen(),
+      home: OnBoardingPage(),
     );
   }
 }
