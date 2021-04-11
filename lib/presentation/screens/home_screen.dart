@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pet_app/data/models/model.dart';
-import 'package:pet_app/presentation/screens/chat_list_screen.dart';
+import 'package:pet_app/presentation/screens/chat_sessions_screen.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
 import 'package:drawer_swipe/drawer_swipe.dart';
 import 'package:pet_app/presentation/screens/list.dart';
@@ -333,7 +333,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _List(String featuredElement) {
+  Widget _list(String featuredElement) {
     return SliverList(
       delegate: SliverChildListDelegate(
         [
@@ -503,9 +503,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        _List("Doctors"),
-        _List("Clinics"),
-        _List("Stores"),
+        _list("Doctors"),
+        _list("Clinics"),
+        _list("Stores"),
       ],
     );
   }
