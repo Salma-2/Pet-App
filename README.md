@@ -2,17 +2,12 @@ Pet App
 <img src="https://user-images.githubusercontent.com/48512714/114320214-41790200-9b15-11eb-9e71-00f8129e1fee.png" width="400" height="790" alt="some_text">
 <img src="https://user-images.githubusercontent.com/48512714/114320216-42aa2f00-9b15-11eb-8065-c8e853a4ac7a.png" width="400" height="790" alt="some_text">
 
-<img src="https://user-images.githubusercontent.com/48512714/114320216-42aa2f00-9b15-11eb-8065-c8e853a4ac7a.png" width="400" height="790" alt="some_text">
-![3](https://user-images.githubusercontent.com/48512714/114320217-4342c580-9b15-11eb-888f-2291f765b3ac.png)
+<img src="https://user-images.githubusercontent.com/48512714/114320217-4342c580-9b15-11eb-888f-2291f765b3ac.png" width="400" height="790" alt="some_text">
+<img src="https://user-images.githubusercontent.com/48512714/114320218-43db5c00-9b15-11eb-9791-248ec558390f.png" width="400" height="790" alt="some_text">
 
-<img src="https://user-images.githubusercontent.com/48512714/114320216-42aa2f00-9b15-11eb-8065-c8e853a4ac7a.png" width="400" height="790" alt="some_text">
-![4](https://user-images.githubusercontent.com/48512714/114320218-43db5c00-9b15-11eb-9791-248ec558390f.png)
+<img src="https://user-images.githubusercontent.com/48512714/114320219-450c8900-9b15-11eb-9f29-b0e8f85a0825.png" width="400" height="790" alt="some_text">
+<img src="https://user-images.githubusercontent.com/48512714/114320222-463db600-9b15-11eb-899e-90c0cc718c39.png" width="400" height="790" alt="some_text">
 
-<img src="https://user-images.githubusercontent.com/48512714/114320216-42aa2f00-9b15-11eb-8065-c8e853a4ac7a.png" width="400" height="790" alt="some_text">
-![5](https://user-images.githubusercontent.com/48512714/114320219-450c8900-9b15-11eb-9f29-b0e8f85a0825.png)
-
-<img src="https://user-images.githubusercontent.com/48512714/114320216-42aa2f00-9b15-11eb-8065-c8e853a4ac7a.png" width="400" height="790" alt="some_text">
-![6](https://user-images.githubusercontent.com/48512714/114320222-463db600-9b15-11eb-899e-90c0cc718c39.png)
 
 <img src="https://user-images.githubusercontent.com/48512714/114320216-42aa2f00-9b15-11eb-8065-c8e853a4ac7a.png" width="400" height="790" alt="some_text">
 ![7](https://user-images.githubusercontent.com/48512714/114320223-46d64c80-9b15-11eb-8e78-3a0f98451908.png)
