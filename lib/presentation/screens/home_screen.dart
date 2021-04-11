@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pet_app/data/models/model.dart';
+import 'package:pet_app/presentation/screens/chat_list_screen.dart';
 import 'package:pet_app/presentation/theme/all_theme.dart';
 import 'package:drawer_swipe/drawer_swipe.dart';
 import 'package:pet_app/presentation/screens/list.dart';
@@ -368,6 +369,10 @@ class _HomeScreenState extends State<HomeScreen> {
               style: TextStyle(color: Colors.white),
             ),
             leading: Icon(Icons.chat, color: Colors.white),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ChatListScreen()));
+            },
           ),
           ListTile(
             title: Text(
