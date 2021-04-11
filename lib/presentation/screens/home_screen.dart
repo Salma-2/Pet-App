@@ -151,7 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text("Hello,", style: TextStyles.title.subTitleColor),
-        Text("Salma Hamdi", style: TextStyles.h1Style),
+        Text("User", style: TextStyles.h1Style),
       ],
     ).p16;
   }
