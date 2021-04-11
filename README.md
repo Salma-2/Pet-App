@@ -30,7 +30,6 @@ Pet App
 <img src="https://user-images.githubusercontent.com/48512714/114320510-776ab600-9b16-11eb-9add-e20d4c7f315c.png" width="400" height="790" alt="some_text">
 <img src="https://user-images.githubusercontent.com/48512714/114320521-7b96d380-9b16-11eb-8d82-940c787126ef.png" width="400" height="790" alt="some_text">
 
-<img src="https://user-images.githubusercontent.com/48512714/114320512-78034c80-9b16-11eb-8072-9fbf9799c8f9.png" width="400" height="790" alt="some_text">
 <img src= "https://user-images.githubusercontent.com/48512714/114320514-79347980-9b16-11eb-9183-36e746f0fe03.png" width="400" height="790" alt="some_text">
 <img src="https://user-images.githubusercontent.com/48512714/114320517-7a65a680-9b16-11eb-986a-dfebc32dc556.png" width="400" height="790" alt="some_text">
 <img src="https://user-images.githubusercontent.com/48512714/114320523-7cc80080-9b16-11eb-8ed4-6298951e40c9.png" width="400" height="790" alt="some_text">
