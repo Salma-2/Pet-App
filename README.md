@@ -1,5 +1,6 @@
 Pet App
-![1](https://user-images.githubusercontent.com/48512714/114320214-41790200-9b15-11eb-9e71-00f8129e1fee.png)
+![1](https://user-images.githubusercontent.com/48512714/114320214-41790200-9b15-11eb-9e71-00f8129e1fee.png)width="400" height="790" 
+<img src="https://user-images.githubusercontent.com/48512714/114320214-41790200-9b15-11eb-9e71-00f8129e1fee.png" width="400" height="790" alt="some_text">
 ![2](https://user-images.githubusercontent.com/48512714/114320216-42aa2f00-9b15-11eb-8065-c8e853a4ac7a.png)
 ![3](https://user-images.githubusercontent.com/48512714/114320217-4342c580-9b15-11eb-888f-2291f765b3ac.png)
 ![4](https://user-images.githubusercontent.com/48512714/114320218-43db5c00-9b15-11eb-9791-248ec558390f.png)
