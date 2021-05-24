@@ -1,8 +1,8 @@
 
 Pet App is an App for Pet Lovers , here you can:
-* View The nearst , cheapest clinics for your pet.
+* View The nearest , cheapest clinics for your pet.
 * Adopt a pet or rehome your pet
-* find yout pet match
+* find your pet match
 * see rescue pets posts, and help them
 * Ask a doctor 
 * find all pet stores and filter them by rate , nearest and cheapest!
